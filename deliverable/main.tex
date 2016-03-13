@@ -9,6 +9,7 @@
 \usepackage[english]{babel}
 \usepackage[T1]{fontenc}
 \usepackage{microtype}
+\usepackage{titling}
 \usepackage[pagestyles]{titlesec}
 \titleformat{\chapter}[hang]{\huge\bfseries}{}{0pt}{}[
     \vspace{-0.5ex}%
@@ -19,10 +20,24 @@
 \renewcommand{\thesection}{\thechapter.\Roman{section}} 
 \renewcommand{\thesubsection}{\thechapter.\thesection.\Roman{subsection}}
 
+\pretitle{\vspace{-1cm}\centering\HUGE\bfseries\scshape}
+\posttitle{\\
+\vspace{-20pt}\\
+\rule{10em}{0.5pt}\\
+\vspace{20pt}}
+\preauthor{\centering\large}
+\postauthor{\\\vspace{18pt}}
+\predate{\centering\large}
+\postdate{\\}
+
+\setulmarginsandblock{3cm}{3cm}{*}
+\setlrmarginsandblock{3.5cm}{3.5cm}{*}
+\checkandfixthelayout%
+
 % Meta-data
 \title{Deliverables}
 \author{Mathias Sass Michno}
-\date{}
+\date{March 14, 2016}
 
 % Main modules
 \usepackage{url}      % URL
@@ -34,7 +49,8 @@
 \usepackage{listings} % Code
 \usepackage{xcolor}    % Highlight
 \usepackage{multicol} % Multi Column
-\usepackage{enumitem}
+\usepackage[inline,shortlabels]{enumitem}
+\usepackage{csquotes}
 
 % Document
 \begin{document}
@@ -44,6 +60,7 @@
 \input{src/1/main.tex}
 \input{src/2/main.tex}
 \input{src/3/main.tex}
+\newpage
 \input{src/4/main.tex}
 \input{src/5/main.tex}
 \input{src/6/main.tex}
