@@ -12,7 +12,8 @@
 *.toc
 *.fmt
 ### Latex Output folder ###
-deliverable/dist
+*/dist
+*/node_modules
 
 ## Intermediate documents:
 *.dvi
