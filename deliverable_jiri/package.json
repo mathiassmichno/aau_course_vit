@@ -1,6 +1,6 @@
 {
-  "name": "deliverable",
-  "description": "Deliverable",
+  "name": "deliverable_jiri",
+  "description": "Deliverable Jiri",
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
